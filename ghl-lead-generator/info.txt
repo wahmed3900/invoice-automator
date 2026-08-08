@@ -1,0 +1,113 @@
+cd "C:\Users\waqas\Documents\Invoice Reminder Automator\ghl-lead-generator"
+
+nstall the package:
+
+bash
+npm install @vercel/speed-insights
+2. In your  app-layout.tsx (App Router) or pages/_app.tsx (Pages Router):
+
+tsx
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
+    </html>
+  );
+}
+That's it — Vercel will automatically start collecting Core Web Vitals.
+
+❌ If you're using Express (your current API)
+Vercel Speed Insights is only for frontend apps (Next.js, React, etc.). It won't work with a pure Express API.
+
+For Express, you can use:
+
+Vercel Analytics (for frontend)
+
+Custom logging with console.log or Sentry for API monitoring
+
+Vercel Logs (built into the dashboard) — you already have access to these!
+
+🧪 Quick check — which one is your project?
+Run this in your terminal:
+
+bash
+# Check if you have Next.js installed
+cat package.json | grep next
+If you see "next": "^14.2.3" → you're using Next.js → use the import above.
+
+If you see "express": "^4.19.2" → you're using Express → Speed Insights won't work (but Vercel logs will).
+
+🚀 If you want to add Speed Insights to your Express API (alternative):
+You can't use the Next.js component, but you can:
+
+Add custom headers in vercel.json to enable monitoring.
+
+Use Vercel's built-in Analytics (go to your project dashboard → Analytics → Enable).
+
+Let me know which one you're using, and I'll give you the exact steps! 😊
+
+notepad 'app-ayout.tsx
+Got it — you're working with a Next.js project and trying to create or edit app/layout.tsx. That's the root layout file for the App Router.
+
+✅ To create/edit app/layout.tsx in Notepad:
+1. Navigate to the right folder first:
+
+powershell
+cd "C:\Users\waqas\Documents\Invoice Reminder Automator\ghl-lead-generator\app"
+2. Open the file in Notepad:
+
+powershell
+notepad layout.tsx
+(If the file doesn't exist, Notepad will ask if you want to create it — click Yes.)
+
+📝 Paste this basic layout (with Speed Insights):
+tsx
+import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+export const metadata: Metadata = {
+  title: "Invoice Reminder Automator",
+  description: "Automate invoice reminders and tracking",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
+    </html>
+  );
+}
+🚀 After saving:
+Make sure you have the package installed:
+
+bash
+npm install @vercel/speed-insights
+Commit and push:
+
+bash
+git add app/layout.tsx
+git commit -m "Add Speed Insights to root layout"
+git push
+Redeploy on Vercel — Speed Insights will start collecting data automatically.
+
+💡 If you see an error:
+Make sure you're inside the ghl-lead-generator folder when running npm install.
+
+If the app folder doesn't exist, create it:
+
+powershell
+mkdir app
+Run those commands, paste the layout, commit, and deploy — you'll have Speed Insights live! 🚀
+

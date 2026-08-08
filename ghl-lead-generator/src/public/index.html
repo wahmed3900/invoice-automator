@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Automator – CEO Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div>
+          <h1>📄 Invoice Automator</h1>
+          <p class="subtitle">CEO Dashboard • Real-time overview</p>
+        </div>
+        <div class="header-status">
+          <span class="status-dot" id="statusDot"></span>
+          <span id="statusText">Checking API...</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container">
+    
+    <!-- STATS CARDS -->
+    <section class="stats-grid" id="statsGrid">
+      <div class="stat-card blue">
+        <div class="stat-icon">📊</div>
+        <div>
+          <p class="stat-label">Total Invoices</p>
+          <p class="stat-value" id="totalInvoices">—</p>
+        </div>
+      </div>
+      <div class="stat-card yellow">
+        <div class="stat-icon">⏳</div>
+        <div>
+          <p class="stat-label">Pending</p>
+          <p class="stat-value" id="pendingInvoices">—</p>
+        </div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-icon">⚠️</div>
+        <div>
+          <p class="stat-label">Overdue</p>
+          <p class="stat-value" id="overdueInvoices">—</p>
+        </div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-icon">💰</div>
+        <div>
+          <p class="stat-label">Total Revenue</p>
+          <p class="stat-value" id="totalRevenue">—</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CHART + TABLE ROW ========== -->
+    <section class="chart-table-row">
+      
+      <!-- CHART SECTION -->
+      <div class="chart-section">
+        <h2>📈 Invoice Status</h2>
+        <div class="chart-wrapper">
+          <canvas id="statusChart"></canvas>
+        </div>
+      </div>
+
+      <!-- INVOICE TABLE -->
+      <div class="table-section">
+        <div class="table-header">
+          <h2>📋 Recent Invoices</h2>
+          <span class="badge" id="invoiceCount">0</span>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Invoice</th>
+                <th>Client</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Due Date</th>
+              </tr>
+            </thead>
+            <tbody id="invoiceBody">
+              <tr><td colspan="5" class="loading-text">Loading invoices...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <p>🚀 Built with <span class="heart">❤️</span> by wahmed3900 &amp; team • API v1.0.0</p>
+      <p class="api-info">📡 <span id="apiUrl">invoice-automator.vercel.app</span></p>
+    </footer>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

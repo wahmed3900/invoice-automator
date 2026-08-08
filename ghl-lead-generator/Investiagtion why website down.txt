@@ -1,0 +1,19 @@
+https://invoice-automator.vercel.app/	404 (currently)
+
+https://invoice-automator.vercel.app/api 404	Maybe JSON response
+
+https://invoice-automator.vercel.app/invoices 404	Maybe JSON response
+
+https://invoice-automator.vercel.app/health 404
+
+What's the name of your main file? (index.js, server.js, app.js?)
+
+What does your package.json say under "start"?
+
+What URL did you expect to see your app at?
+
+index.js
+
+server.js
+
+app.js

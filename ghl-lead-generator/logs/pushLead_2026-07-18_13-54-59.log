@@ -1,0 +1,72 @@
+2026-07-18 13:54:59 | Starting pushLead.ps1
+2026-07-18 13:54:59 | Timestamp: 2026-07-18_13-54-59
+2026-07-18 13:54:59 | Loaded enriched-leads.json successfully.
+2026-07-18 13:54:59 | Environment variables validated.
+2026-07-18 13:54:59 | Found 21 leads to process.
+2026-07-18 13:54:59 | Pushing lead: 
+2026-07-18 13:55:00 | FAILED: 
+2026-07-18 13:55:00 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:01 | FAILED: 
+2026-07-18 13:55:01 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:01 | FAILED: 
+2026-07-18 13:55:01 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:01 | FAILED: 
+2026-07-18 13:55:01 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:01 | FAILED: 
+2026-07-18 13:55:01 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:01 | FAILED: 
+2026-07-18 13:55:01 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:01 | FAILED: 
+2026-07-18 13:55:01 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:01 | FAILED: 
+2026-07-18 13:55:01 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:01 | FAILED: 
+2026-07-18 13:55:01 | {"msg":"Not found"}
+2026-07-18 13:55:01 | Pushing lead: 
+2026-07-18 13:55:02 | FAILED: 
+2026-07-18 13:55:02 | {"msg":"Not found"}
+2026-07-18 13:55:02 | Pushing lead: 
+2026-07-18 13:55:02 | FAILED: 
+2026-07-18 13:55:02 | {"msg":"Not found"}
+2026-07-18 13:55:02 | Pushing lead: 
+2026-07-18 13:55:02 | FAILED: 
+2026-07-18 13:55:02 | {"msg":"Not found"}
+2026-07-18 13:55:02 | Pushing lead: 
+2026-07-18 13:55:02 | FAILED: 
+2026-07-18 13:55:02 | {"msg":"Not found"}
+2026-07-18 13:55:02 | Pushing lead: 
+2026-07-18 13:55:02 | FAILED: 
+2026-07-18 13:55:02 | {"msg":"Not found"}
+2026-07-18 13:55:02 | Pushing lead: 
+2026-07-18 13:55:02 | FAILED: 
+2026-07-18 13:55:02 | {"msg":"Not found"}
+2026-07-18 13:55:02 | Pushing lead: 
+2026-07-18 13:55:02 | FAILED: 
+2026-07-18 13:55:29 | {"msg":"Not found"}
+2026-07-18 13:55:29 | Pushing lead: 
+2026-07-18 13:55:30 | FAILED: 
+2026-07-18 13:55:30 | {"msg":"Not found"}
+2026-07-18 13:55:30 | Pushing lead: 
+2026-07-18 13:55:30 | FAILED: 
+2026-07-18 13:55:30 | {"msg":"Not found"}
+2026-07-18 13:55:30 | Pushing lead: 
+2026-07-18 13:55:30 | FAILED: 
+2026-07-18 13:55:30 | {"msg":"Not found"}
+2026-07-18 13:55:30 | Pushing lead: 
+2026-07-18 13:55:30 | FAILED: 
+2026-07-18 13:55:30 | {"msg":"Not found"}
+2026-07-18 13:55:30 | Pushing lead: 
+2026-07-18 13:55:30 | FAILED: 
+2026-07-18 13:55:30 | {"msg":"Not found"}
+2026-07-18 13:55:30 | Success file written: C:\Users\waqas\Documents\Invoice Reminder Automator\ghl-lead-generator\success\success_2026-07-18_13-54-59.json
+2026-07-18 13:55:30 | Failed file written: C:\Users\waqas\Documents\Invoice Reminder Automator\ghl-lead-generator\failed\failed_2026-07-18_13-54-59.json
+2026-07-18 13:55:30 | All leads processed.
+2026-07-18 13:55:30 | Script completed.

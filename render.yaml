@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: invoice-automator-api
+    runtime: node
+    plan: free          # upgrade to "starter" ($7/mo) to eliminate cold starts
+    region: oregon
+    buildCommand: npm install && npx prisma generate
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true    # redeploys automatically on every GitHub push
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      # Set these in the Render dashboard → Environment tab
+      - key: DATABASE_URL
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_CALLBACK_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: HUGGINGFACE_API_KEY
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+      - key: APP_URL
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      # URL of this service itself — used by the keep-alive pinger
+      - key: RENDER_SELF_URL
+        sync: false

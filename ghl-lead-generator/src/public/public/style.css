@@ -1,0 +1,37 @@
+/* ========== CHART + TABLE ROW ========== */
+.chart-table-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-section {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+.chart-section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.chart-wrapper {
+  max-width: 100%;
+  max-height: 220px;
+  margin: 0 auto;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .chart-table-row {
+    grid-template-columns: 1fr;
+  }
+  .chart-wrapper {
+    max-height: 200px;
+  }
+}

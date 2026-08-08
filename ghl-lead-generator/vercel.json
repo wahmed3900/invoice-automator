@@ -1,0 +1,16 @@
+﻿{
+  "version": 2,
+  "framework": null,
+  "builds": [
+    {
+      "src": "ghl-lead-generator/src/services/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "ghl-lead-generator/src/services/server.js"
+    }
+  ]
+}
